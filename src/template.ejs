@@ -424,7 +424,7 @@
               <tr class="checkDetails <% if(check.fails > 0) { %>failed<% } %>">
                 <!-- Modify to include a collapsible row -->
                 <td width="50%">
-                  <a data-bs-toggle="collapse" href="#collapse<%= check.name.replace(/\s/g, '') %>" role="button" aria-expanded="false" aria-controls="collapse<%= check.name.replace(/\s/g, '') %>">
+                  <a data-toggle="collapse" href="#collapse<%= check.name.replace(/\s/g, '') %>" role="button" aria-expanded="false" aria-controls="collapse<%= check.name.replace(/\s/g, '') %>">
                     <%= check.name %>
                   </a>
                 </td>
