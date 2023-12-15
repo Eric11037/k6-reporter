@@ -13,7 +13,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-    
+
     <title>K6 Load Test: <%= title %></title>
     <style>
       body {
@@ -437,11 +437,7 @@
                   <div class="collapse" id="collapse<%= check.name.replace(/\s/g, '') %>">
                     <div class="card card-body">
                       <!-- Display response content related to the check -->
-                      <% for (resp of response) { %>
-                        <% if (resp.check_name === check.name) { %>
-                          <pre><%= resp.response_content %></pre>
-                        <% } %>
-                      <% } %>
+                      <%= check.name %>
                     </div>
                   </div>
                 </td>
