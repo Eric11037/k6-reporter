@@ -96,7 +96,6 @@ export function htmlReport(data, opts = {}) {
   const html = ejs.render(template, {
     data,
     title: opts.title,
-    response: opts.response,
     standardMetrics,
     otherMetrics,
     thresholdFailures,
