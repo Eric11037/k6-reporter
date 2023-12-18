@@ -424,7 +424,7 @@
               <tr class="checkDetails <% if(check.fails > 0) { %>failed<% } %>">
                 <!-- Modify to include a collapsible row -->
                 <td width="50%">
-                  <a data-toggle="collapse" href="#collapse<%= check.name.replace(/\s/g, '') %>" role="button" aria-expanded="false" aria-controls="collapse<%= check.name.replace(/\s/g, '') %>">
+                  <a data-toggle="collapse" href="#collapse<%= check.id.replace(/\s/g, '') %>" role="button" aria-expanded="false" aria-controls="collapse<%= check.id.replace(/\s/g, '') %>">
                     <%= check.name %>
                   </a>
                 </td>
@@ -434,7 +434,7 @@
               <!-- Collapsible content -->
               <tr>
                 <td colspan="3" class="p-0">
-                  <div class="collapse" id="collapse<%= check.name.replace(/\s/g, '') %>">
+                  <div class="collapse" id="collapse<%= check.id.replace(/\s/g, '') %>">
                     <div class="card card-body">
                       <!-- Display response content related to the check -->
                       <% for (resp of response) { %>
