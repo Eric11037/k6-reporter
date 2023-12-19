@@ -438,7 +438,7 @@
                     <div class="card card-body">
                       <!-- Display response content related to the check -->
                       <% for (resp of response) { %>
-                        <% if (resp.check_name === check.name) { %>
+                        <% if (resp.check_name) { %>
                           <pre><%= resp.response_content %></pre>
                         <% } %>
                       <% } %>
